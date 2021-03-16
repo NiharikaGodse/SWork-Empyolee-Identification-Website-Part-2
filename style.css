@@ -1,0 +1,18 @@
+body{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color:rgba(0, 0, 0, 0.753);
+    font-weight: bolder;
+    background: linear-gradient(to bottom right,rgb(29, 29, 255),rgba(0, 129, 168, 0.603),rgba(82, 82, 82, 0.459));
+}
+
+
+#camera,#result{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+
+.nameOfObjects,#result_object_name,#result_object_accuracy{
+    color: black;
+}

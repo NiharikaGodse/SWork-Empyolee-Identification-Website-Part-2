@@ -1,0 +1,83 @@
+ 
+<html>
+  <head>
+    <title>SWork Employee Authorisation Using Image Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1 style="width: 100%; padding-top: 5px; padding-bottom: 5px;">
+
+      <img src="https://static.thenounproject.com/png/1291212-200.png" style="height: 
+      120px;">
+       
+    SWork Employee Authorisation Using Image Recognition</h1>
+
+    <hr>
+
+      <br><br>
+
+    
+
+      <h1  style="background-color: white; text-decoration: underline; width: 30%; color: red;">Webcam View - </h1>
+      <h3>(Click on Capture Image of Employee to see Webcam)</h3>
+
+      <br>
+
+      <span id="camera"></span>
+
+      <span id="result"></span>
+
+      <br><br>
+
+      <button onclick="snapshot()" class="btn btn-info">Capture Image of Employee</button>
+
+      <br><br>
+
+      <button onclick="check()" class="btn btn-success">Identify Image of Employee</button>
+
+      <br><br>
+
+
+      <p style="font-size: 22px;">Employee : <span id="result_object_name"></span> </p>
+  
+      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+      <hr><hr>
+
+      <p style="font-size: 22px;">Model is trained to identify the following: </p>
+
+      <h2><b class="nameOfObjects">
+        🚫No One In🚫
+        <hr>
+        👧🏽Niharika Godse👧🏽
+        <hr>
+        🐇Bunny the Rabbit🐇
+        <hr>
+        🐕Clifford the Dog🐕
+        <hr>
+        🐘Dumbo the Elephant🐘
+      </b>
+
+    </h2>
+
+    <h3 style="text-decoration: none; color: red;">Note: Employees should be seated in their BROWN Chairs in front a plain WHITE wall with only their heads visible</h3>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
